@@ -1,0 +1,108 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #f0a500;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('https://source.unsplash.com/1600x600/?technology,web') no-repeat center center/cover;
+    color: white;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .btn {
+    margin-top: 15px;
+    background: #f0a500;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* SERVICES SECTION */
+.services {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.service-box {
+    background: white;
+    padding: 1rem;
+    margin: 10px;
+    flex: 1 1 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
